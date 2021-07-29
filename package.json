@@ -1,0 +1,21 @@
+{
+  "name": "p3_pack",
+  "version": "1.0.0",
+  "description": "Projet 3 Openclassrooms",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./style.css"
+
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alex-m117/AlexandreMARIE_3_16072021.git"
+  },
+  "author": "Alexandre MARIE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alex-m117/AlexandreMARIE_3_16072021/issues"
+  },
+  "homepage": "https://github.com/Alex-m117/AlexandreMARIE_3_16072021#readme"
+}
