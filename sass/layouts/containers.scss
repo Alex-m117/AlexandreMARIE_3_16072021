@@ -1,0 +1,104 @@
+/* Mise en forme du site de base 'maquette mobile' sur la résolution 375px/****px */
+/* Index - Home */
+.header{
+	width: 100%;
+	height: 63px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.loc__desc{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 337px;
+}
+
+
+.localisation{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #eaeaea;
+	width: 100%;
+	height: 50px;
+}
+
+.description{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: $color-background;
+	width: 100%;
+	height: 287px;
+}
+
+
+.choix{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 440px;
+}
+
+.restaurants{
+	width: 100%;
+	height: 1225px;
+	background-color: $color-background;
+}
+
+.cards
+{
+	width: 100%;
+	height: 1060px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 25px;
+}
+.liens{
+	background-color: $color-footer;
+	width: 100%;
+	height: 197px;
+}
+
+/* Pages 1 à 4 du site */
+
+.pages{
+	width: 100%;
+	height: 63px;
+}
+
+.part-menus{
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	background-color: $color-background;
+	width: 100%;
+	height: 1200px;
+	margin-top:-50px;
+	padding-top: 50px;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
