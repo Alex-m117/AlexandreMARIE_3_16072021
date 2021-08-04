@@ -76,15 +76,17 @@
 	border-top-right-radius: 25px;
 	background-color: $color-background;
 	width: 100%;
-	height: 1200px;
-	margin-top:-50px;
-	padding-top: 50px;
-	border-top-left-radius: 25px;
-	border-top-right-radius: 25px;
-
+	height: 1350px;
 }
 
-
+/* Adaptation taille section pour +de 3 cards (page 2) */
+.part-menus1{
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	background-color: $color-background;
+	width: 100%;
+	height: 1420px;
+}
 
 
 

@@ -1,7 +1,8 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,900&family=Shrikhand&display=swap.css");
 body {
-  @font-family : "Roboto", sans-serif;
-  margin: 0;
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -86,11 +87,16 @@ body {
   border-top-right-radius: 25px;
   background-color: #f6f6f6;
   width: 100%;
-  height: 1200px;
-  margin-top: -50px;
-  padding-top: 50px;
+  height: 1350px;
+}
+
+/* Adaptation taille section pour +de 3 cards (page 2) */
+.part-menus1 {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+  background-color: #f6f6f6;
+  width: 100%;
+  height: 1420px;
 }
 
 .bloc__page {
@@ -121,12 +127,14 @@ body {
   border: none;
   width: 125px;
   height: 25px;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .description__text h1 {
   display: flex;
   align-items: center;
-  width: 70%;
+  width: 60%;
   height: 55px;
   font-size: 20px;
   text-align: center;
@@ -134,10 +142,11 @@ body {
 }
 
 .description__text p {
-  width: 85%;
+  width: 80%;
   height: 45px;
   display: flex;
   font-size: 16px;
+  font-weight: 300;
   text-align: center;
 }
 
@@ -146,7 +155,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 100%;
   height: 180px;
 }
 
@@ -176,11 +185,12 @@ body {
 .choix__selection {
   display: flex;
   align-items: center;
-  width: 89%;
+  width: 92%;
   height: 73px;
   list-style-type: none;
   border-radius: 25px;
   background: #f6f6f6;
+  box-shadow: 0 0 9px 1px #D3D3D3;
 }
 .choix__selection .choix__num {
   display: flex;
@@ -234,6 +244,7 @@ body {
   width: 89%;
   height: 250px;
   background-color: white;
+  box-shadow: 0 0 9px 1px #D3D3D3;
 }
 
 .cards__img {
@@ -293,6 +304,8 @@ body {
   justify-content: flex-start;
   height: 25px;
   margin: 0;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .cards__like {
@@ -307,6 +320,8 @@ body {
 .liens h2 {
   color: white;
   margin-left: 25px;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 18px;
 }
 
 .liens a {
@@ -327,39 +342,56 @@ body {
   list-style-type: none;
 }
 
-#bloc__page1 {
+.liens__footer i {
+  font-size: 12px;
+}
+
+.fas.fa-utensils {
+  margin-right: 10px;
+}
+
+.fas.fa-hands-helping {
+  margin-right: 5px;
+}
+
+#bloc__page {
   width: 375px;
   max-width: 100%;
-  height: 2280px;
+  height: 1610px;
   border: 2px solid orange;
   margin: 0;
 }
 
-#bloc__page2 {
+#bloc__page1 {
   width: 375px;
   max-width: 100%;
-  height: 2280px;
+  height: 1680px;
   border: 2px solid blue;
   margin: 0;
 }
 
-#bloc__page3 {
-  width: 375px;
-  max-width: 100%;
-  height: 2280px;
-  border: 2px solid yellow;
-  margin: 0;
+/* Header des pages 1 à 4 */
+.pages {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-#bloc__page4 {
-  width: 375px;
-  max-width: 100%;
-  height: 2280px;
-  border: 2px solid green;
-  margin: 0;
+.pages a {
+  width: 20%;
+  margin-left: 5%;
+  text-decoration: none;
 }
 
-.main__img {
+.pages i {
+  display: flex;
+  font-size: 18px;
+  color: black;
+}
+
+/* Bloc image et titre des menus */
+.titre__img {
   width: 100%;
   height: 260px;
   object-fit: cover;
@@ -368,31 +400,62 @@ body {
 
 .titre {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+
+.titre__block {
+  display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
+  margin-top: -50px;
+  border-radius: 40px 40px 0 0;
+  z-index: 2;
   background-color: #f6f6f6;
 }
 
-.menus__titres {
-  margin-left: 20px;
+.titre__menus {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 26px;
+}
+
+/* Menus */
+.menus__titres h3 {
+  margin-left: 15px;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .menus__cards {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  height: 236px;
 }
 
+/* Adaptation taille bloc de + de trois vignettes (cards) */
+.menus__cards1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  height: 314px;
+}
+
+/* Vignettes */
 .palette {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 96%;
+  width: 94%;
   height: 68px;
-  border-radius: 25px;
+  border-radius: 15px;
   background: white;
+  box-shadow: 0 0 9px 1px #D3D3D3;
 }
 
 .palette__text {
@@ -405,10 +468,34 @@ body {
 
 .palette__text p {
   margin: 0;
+  font-size: 16px;
+  text-overflow: ellipsis;
 }
 
 .palette__price {
   margin-right: 20px;
+  display: flex;
+  align-items: flex-end;
+  height: 40px;
+}
+
+/* Boutton commander */
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.button .button__commander {
+  width: 50%;
+  height: 50px;
+  margin-top: 50px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  background-color: #9356DC;
+  border-style: none;
 }
 
 /*# sourceMappingURL=style.css.map */

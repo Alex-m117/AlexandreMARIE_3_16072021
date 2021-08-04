@@ -25,13 +25,15 @@
 	background: transparent;
 	border: none;
 	width: 125px;
-	height: 25px;	
+	height: 25px;
+	font-size: 14px;
+	font-weight: 600;
 }
 
 .description__text h1{
 	display: flex;
 	align-items: center;
-	width: 70%;
+	width: 60%;
 	height: 55px;
 	font-size: 20px;
 	text-align: center;
@@ -39,10 +41,11 @@
 }
 
 .description__text p{
-	width: 85%;
+	width: 80%;
 	height: 45px;
 	display: flex;
 	font-size: 16px;
+	font-weight: 300;
 	text-align: center;
 }
 
@@ -51,7 +54,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 80%;
+	width: 100%;
 	height: 180px;
 }
 
@@ -80,11 +83,12 @@
 .choix__selection{
 	display: flex;
 	align-items: center;
-	width: 89%;
+	width: 92%;
 	height: 73px;
 	list-style-type: none;
 	border-radius: 25px;
 	background: $color-background;
+	box-shadow:0 0 9px 1px $lihtgrey-effect;
 .choix__num{
 	display: flex;
 	align-items: center;
@@ -137,6 +141,7 @@
 	width: 89%;
 	height: 250px;
 	background-color: white;
+	box-shadow:0 0 9px 1px $lihtgrey-effect;
 }
 .cards__img{
 	display: flex;
@@ -194,6 +199,8 @@
 	justify-content: flex-start;
 	height: 25px;
 	margin:0;
+	font-size: 16px;
+	font-weight: 300;
 }
 
 .cards__like{
@@ -207,7 +214,9 @@
 
 .liens h2{
 	color:white;
-	margin-left: 25px;	
+	margin-left: 25px;
+	font-family: 'Shrikhand', sans-serif;
+	font-size: 18px;
 } 
 
 .liens a{
@@ -228,10 +237,17 @@
 	list-style-type: none;	
 }
 
+.liens__footer i{
+	font-size: 12px;
+}
 
+.fas.fa-utensils{
+	margin-right: 10px;
+}
 
-
-
+.fas.fa-hands-helping{
+	margin-right: 5px;
+}
 
 
 

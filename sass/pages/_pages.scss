@@ -1,36 +1,40 @@
-#bloc__page1{
+#bloc__page{
 	width: 375px;
 	max-width: 100%;
-	height: 2280px;
+	height: 1610px;
 	border: 2px solid orange;
 	margin: 0;
 }
 
-#bloc__page2{
+#bloc__page1{
 	width: 375px;
 	max-width: 100%;
-	height: 2280px;
+	height: 1680px;
 	border: 2px solid blue;
 	margin: 0;
 }
 
-#bloc__page3{
-	width: 375px;
-	max-width: 100%;
-	height: 2280px;
-	border: 2px solid yellow;
-	margin: 0;
+/* Header des pages 1 à 4 */
+.pages{
+	width: 100%;
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+	
+}
+.pages a{
+	width: 20%;
+	margin-left: 5%;
+	text-decoration: none;
+}
+.pages i{
+	display: flex;
+	font-size: 18px;
+	color: black;
 }
 
-#bloc__page4{
-	width: 375px;
-	max-width: 100%;
-	height: 2280px;
-	border: 2px solid green;
-	margin: 0;
-}
-
-.main__img{
+/* Bloc image et titre des menus */
+.titre__img{
 	width: 100%;
 	height: 260px;
 	object-fit: cover;
@@ -39,43 +43,61 @@
 
 .titre{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+}
+
+.titre__block{
+	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	width: 100%;
+	margin-top:-50px;
+	border-radius: 40px 40px 0 0;
+	z-index: 2;
 	background-color: $color-background;
-
 }
 
-.menus__titres{
-	margin-left: 20px;
+.titre__menus{
+	font-family: 'Shrikhand', sans-serif;
+	font-size: 26px;
 }
 
+/* Menus */
+.menus__titres h3{
+	margin-left: 15px;
+	font-size: 16px;
+	font-weight: 400;
+}
 
 .menus__cards{
 	display:flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: space-between;
+	align-items: center;
+	height: 236px;
+
 }
-
-
-
-
-
-
-
-
-
-
-
+/* Adaptation taille bloc de + de trois vignettes (cards) */
+.menus__cards1{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	align-items: center;
+	height: 314px;
+}
+/* Vignettes */
 .palette{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	width: 96%;
+	width: 94%;
 	height: 68px;
-	border-radius: 25px;
+	border-radius: 15px;
 	background: white;
+	box-shadow:0 0 9px 1px $lihtgrey-effect;
 }
 .palette__text{
 	margin-left: 10px;
@@ -87,14 +109,36 @@
 
 .palette__text p{
 	margin: 0;
+	font-size: 16px;
+	text-overflow: ellipsis;
 }
 
 .palette__price{
 	margin-right: 20px;
+	display: flex;
+	align-items: flex-end;
+	height: 40px;
 }
 
+/* Boutton commander */
 
-
+.button{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+.button__commander{
+	width: 50%;
+	height: 50px;
+	margin-top: 50px;
+	border-radius: 25px;
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	color: white;
+	background-color: $color-primaire;
+	border-style: none;
+	}
+}
 
 
 
