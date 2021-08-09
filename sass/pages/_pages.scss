@@ -1,16 +1,9 @@
 #bloc__page{
-	width: 375px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
 	max-width: 100%;
-	height: 1610px;
-	border: 2px solid orange;
-	margin: 0;
-}
-
-#bloc__page1{
-	width: 375px;
-	max-width: 100%;
-	height: 1680px;
-	border: 2px solid blue;
 	margin: 0;
 }
 
@@ -20,9 +13,15 @@
 	display:flex;
 	flex-direction: row;
 	align-items: center;
-	
+	justify-content: flex-start;	
 }
+
+.pages__logo{
+	width: 80%;
+}
+
 .pages a{
+	display: flex;
 	width: 20%;
 	margin-left: 5%;
 	text-decoration: none;
@@ -67,6 +66,15 @@
 	margin-left: 15px;
 	font-size: 16px;
 	font-weight: 400;
+}
+
+.menus__ligne{
+	width: 40px;
+	border-top: 4px solid #99E2D0;
+	margin-top: -15px;
+	margin-bottom: 15px;
+	margin-left: 15px;
+	border-top: 4px solid $color-tertiaire;
 }
 
 .menus__cards{

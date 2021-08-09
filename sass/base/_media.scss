@@ -1,0 +1,163 @@
+/*** Règles Média Queries résolutions <280px ***/
+@media screen and (max-width: 280px) {
+
+/** Index **/
+.description__button{
+	font-size: 12px;
+}
+
+.choix__selection p{
+	font-size: 14px;
+}
+
+.choix__selection i {
+	margin-right: 10px;
+}
+
+/** Pages **/
+.pages a{
+	width: 10%;
+}
+
+.titre__menus{
+	font-size: 22px;
+}
+
+.palette__text h4{
+	font-size: 14px;
+}
+
+.palette__text p{
+	font-size: 12px;
+}
+
+.palette__price {
+	margin-right: 10px;
+	font-size: 14px;
+}
+
+}/*** Fin des règles Média Queries résolutions <280px ***/
+
+/*** Règles Média Queries résolutions <330px ***/
+@media screen and (max-width: 330px) {
+
+/** Index **/
+.description__button{
+	font-size: 14px;
+}
+
+.choix__selection .choix__num{
+	margin-right: 10px;
+}
+
+.choix__selection i{
+	margin-right: 15px;
+}
+
+.cards__description .cards__text{
+	width: 55%;
+}
+
+/** Pages **/
+
+.titre__menus {
+	font-size: 22px;
+}
+
+.palette__text h4{
+	font-size: 14px;
+
+}
+.palette__text p{
+	font-size: 14px;
+}
+
+}/*** Fin des règles Média Queries résolutions <330px ***/
+
+/*** Règles Média Queries résolutions <400px ***/
+@media screen and (min-width: 400px) {
+
+/** Index **/
+.choix__selection p {
+	margin-left: 20px;
+}
+
+.description__text {
+	width: auto;
+}
+
+}/*** Fin des règles Média Queries résolutions <400px ***/
+
+/*** Règles Média Queries résolutions <460px ***/
+@media screen and (min-width: 460px) {
+
+/** Index **/
+.choix{
+	align-items: center;
+}
+
+.choix ul{
+	width: 70%;
+	align-items: center;
+}
+
+}/*** Fin des règles Média Queries résolutions <460px ***/
+
+
+/*** Règles Média Queries résolutions <760px ***/
+@media screen and (min-width: 760px) {
+
+/** Index **/
+.pages__logo{
+	margin-left: 15%;
+}
+.description__text{
+	width: auto;
+}
+
+.description__button{
+	width: 40%;
+}
+
+.choix ul{
+	width: 60%;
+}
+
+.choix__selection a{
+	font-size: 20px;
+}
+
+.choix__selection p {
+	margin-left: 40px;
+}
+
+.menus__titres h3{
+	margin-left: 30px;
+}
+
+.menus__ligne{
+	margin-left: 30px;
+}
+
+.restaurants h2{
+	align-items: center;
+}
+
+.cards__menu{
+	width: 80%;
+}
+
+.button .button__commander{
+	font-size: 16px;
+	width: 40%;
+}
+
+.liens h2{
+	margin-left: 35px;
+}
+
+.liens ul{
+	margin: 0;
+}
+
+}/*** Fin des règles Média Queries résolutions <760px ***/
