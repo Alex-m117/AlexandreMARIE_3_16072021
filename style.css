@@ -417,6 +417,10 @@ body {
   font-size: 26px;
 }
 
+.titre__like {
+  font-size: 24px;
+}
+
 /* Menus */
 .menus__titres h3 {
   margin-left: 15px;
@@ -658,5 +662,235 @@ body {
   }
 }
 /*** Fin des règles Média Queries résolutions <760px ***/
+/*** Règles Média Queries résolutions <830px ***/
+@media screen and (min-width: 830px) {
+  /** Index **/
+  .choix__selection p {
+    margin-left: 60px;
+  }
+
+  .choix__selection .choix__num {
+    margin-right: 30px;
+  }
+
+  .liens h2 {
+    margin-left: 50px;
+  }
+
+  .liens ul {
+    margin-left: 10px;
+  }
+}
+/*** Fin des règles Média Queries résolutions <830px ***/
+/*** Règles Média Queries résolutions <1020px ***/
+@media screen and (min-width: 1020px) {
+  /** Index **/
+  .choix__selection p {
+    margin-left: 70px;
+  }
+
+  .choix ul {
+    width: 55%;
+  }
+
+  .choix__selection .choix__num {
+    margin-right: 40px;
+  }
+}
+/*** Fin des règles Média Queries résolutions <1020px ***/
+/*** Règles Média Queries résolutions <1280px ***/
+@media screen and (min-width: 1280px) {
+  /** Index **/
+  .choix ul {
+    width: 44%;
+  }
+
+  .cards__menu {
+    width: 70%;
+  }
+}
+/*** Fin des règles Média Queries résolutions <1280px ***/
+/*** Règles Média Queries résolutions <1360px ***/
+@media screen and (min-width: 1360px) {
+  /** Index **/
+  .loc__desc {
+    align-items: center;
+  }
+
+  .localisation {
+    width: 70%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+
+  .description {
+    width: 70%;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+
+  .choix ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 85%;
+  }
+
+  .choix__selection {
+    width: 25%;
+  }
+
+  .choix__selection .choix__num {
+    margin-right: 10%;
+  }
+
+  .choix__selection i {
+    margin: 0;
+  }
+
+  .choix__selection p {
+    margin-left: 10%;
+  }
+
+  .choix {
+    height: 300px;
+  }
+
+  .choix h2 {
+    margin: 45px 0 0 0;
+  }
+
+  .restaurants {
+    display: flex;
+    width: 100%;
+    height: 830px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    background-color: white;
+  }
+
+  .restaurants h2 {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding-top: 10px;
+    width: 70%;
+    background-color: #f6f6f6;
+    justify-content: space-around;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+
+  .cards {
+    width: 70%;
+    height: 600px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    background-color: #f6f6f6;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+
+  .cards__menu {
+    width: 40%;
+  }
+
+  .liens {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+  }
+
+  .liens ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 50px;
+    margin-left: -15px;
+    align-items: center;
+    font-size: 16px;
+  }
+
+  .liens h2 {
+    font-size: 24px;
+    margin-left: 0px;
+  }
+
+  .liens a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  /** Pages **/
+  .part-menus {
+    height: 1110px;
+  }
+
+  .part-menus1 {
+    height: 1150px;
+  }
+
+  .titre__img {
+    height: 400px;
+  }
+
+  .menus {
+    display: flex;
+    flex-wrap: wrap;
+    height: 410px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .menus__titres {
+    width: 30%;
+    display: flex;
+    height: 70px;
+    flex-direction: column;
+  }
+
+  .menus__cards {
+    width: 30%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 90px;
+  }
+
+  .menus__cards1 {
+    width: 30%;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    height: 340px;
+  }
+
+  .titre__menus {
+    font-size: 34px;
+  }
+
+  .titre__like {
+    font-size: 30px;
+  }
+
+  .button .button__commander {
+    width: 25%;
+  }
+}
+/*** Fin des règles Média Queries résolutions <1360px **/
 
 /*# sourceMappingURL=style.css.map */
