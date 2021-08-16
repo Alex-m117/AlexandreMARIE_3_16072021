@@ -67,7 +67,7 @@
 	justify-content: space-around;
 	align-items: center;
 	color: white;
-	background-color: $color-primaire;
+	background-image:linear-gradient(320deg, $color-primaire, $color-secondaire);
 }
 .choix h2{
 	margin-left: 23px;

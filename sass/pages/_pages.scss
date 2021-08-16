@@ -110,9 +110,25 @@
 	border-radius: 15px;
 	background: white;
 	box-shadow:0 0 9px 1px $lihtgrey-effect;
+		&:hover {
+			& > .palette__good {
+				max-width: 20%;
+				animation-name: palette-good;
+				animation-duration: 800ms;
+			& > i {
+				transform: rotateZ(360deg);
+				animation-duration: 800ms;
+			}
+		}
+	}
 }
+
 .palette__text{
 	margin-left: 10px;
+	width: 80%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+  	overflow: hidden;
 }
 
 .palette__text h4{
@@ -123,13 +139,39 @@
 	margin: 0;
 	font-size: 16px;
 	text-overflow: ellipsis;
+	white-space: nowrap;
+  	overflow: hidden;
+
 }
 
 .palette__price{
-	margin-right: 20px;
 	display: flex;
 	align-items: flex-end;
 	height: 40px;
+	padding: 10px;
+}
+
+.palette__good{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	height: 68px;
+	width: 20%;
+	max-width: 0;
+	overflow: hidden;
+	background-color: $color-tertiaire;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	transition: transform 2s ease-in-out;
+}
+
+.palette__good i{
+	color: white;
+	font-size: 20px;
+	transition: transform 800ms linear;
+		&:hover {
+			transform: rotateZ(306deg);
+		}
 }
 
 /* Boutton commander */
@@ -147,7 +189,7 @@
 	justify-content: space-around;
 	align-items: center;
 	color: white;
-	background-color: $color-primaire;
+	background-image:linear-gradient(320deg, $color-primaire, $color-secondaire);
 	border-style: none;
 	}
 }
