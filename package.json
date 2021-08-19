@@ -4,7 +4,8 @@
   "description": "Projet 3 Openclassrooms",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./style.css"
+    "sass": "sass --watch ./sass/main.scss:./style.css",
+    "prefix": "postcss ./AlexandreMARIE_3_16072021/style.css --use autoprefixer -d ./AlexandreMARIE_3_16072021/prefixed/"
 
 
   },
@@ -14,6 +15,7 @@
   },
   "author": "Alexandre MARIE",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/Alex-m117/AlexandreMARIE_3_16072021/issues"
   },

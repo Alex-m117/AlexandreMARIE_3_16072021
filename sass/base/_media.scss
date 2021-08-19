@@ -1,5 +1,5 @@
 /*** Règles Média Queries résolutions <280px ***/
-@media screen and (max-width: 280px) {
+@media screen and (min-width: 280px) {
 
 /** Index **/
 .description__button{
@@ -15,10 +15,9 @@
 }
 
 /** Pages **/
-.pages a{
-	width: 10%;
+.pages__logo{
+	width: 60%;
 }
-
 .titre__menus{
 	font-size: 22px;
 }
@@ -38,7 +37,7 @@
 }/*** Fin des règles Média Queries résolutions <280px ***/
 
 /*** Règles Média Queries résolutions <330px ***/
-@media screen and (max-width: 330px) {
+@media screen and (min-width: 330px) {
 
 /** Index **/
 .description__button{
@@ -46,7 +45,7 @@
 }
 
 .choix__selection .choix__num{
-	margin-right: 10px;
+	margin-right: 8%;
 }
 
 .choix__selection i{
@@ -107,15 +106,13 @@
 @media screen and (min-width: 760px) {
 
 /** Index **/
-.pages__logo{
-	margin-left: 15%;
-}
 .description__text{
 	width: auto;
 }
 
 .description__button{
-	width: 40%;
+	width: 35%;
+	font-size: 16px;
 }
 
 .choix ul{
@@ -128,6 +125,13 @@
 
 .choix__selection p {
 	margin-left: 40px;
+}
+
+.titre__block{
+	justify-content: center;
+}
+.titre__menus{
+	margin-right: 15%;
 }
 
 .menus__titres h3{
@@ -198,6 +202,11 @@
 
 .choix__selection .choix__num{
 	margin-right: 40px;
+}
+
+/** Pages **/
+.pages__logo{
+	width: 50%;
 }
 
 }/*** Fin des règles Média Queries résolutions <1020px ***/

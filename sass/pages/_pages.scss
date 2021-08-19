@@ -13,17 +13,20 @@
 	display:flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: flex-start;	
+	justify-content: space-around;	
 }
 
 .pages__logo{
-	width: 80%;
+	width: 70%;
+}
+
+.return {
+	margin-left: 5%;
+	width: 10%;
 }
 
 .pages a{
 	display: flex;
-	width: 20%;
-	margin-left: 5%;
 	text-decoration: none;
 }
 .pages i{
@@ -62,8 +65,31 @@
 }
 
 .titre__like{
-	font-size: 24px;
-}
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 7%;
+	justify-content: center;
+		&--on {
+			z-index: 2;
+    		position: absolute;
+    		font-size: 27px;
+    		opacity:0;
+    		color: $color-tertiaire;	
+    			&:hover {
+    				animation-name: coeur-like;
+					animation-duration: 2000ms;
+					transform-origin: center center;
+    		}
+		}
+		&--off {
+			z-index: 1;
+    		position: absolute;
+    		font-size: 25px;
+    		opacity:1;
+    		color: grey;
+	}
+}	
 
 /* Menus */
 .menus__titres h3{
@@ -88,8 +114,8 @@
 	justify-content: space-between;
 	align-items: center;
 	height: 236px;
-
 }
+
 /* Adaptation taille bloc de + de trois vignettes (cards) */
 .menus__cards1{
 	display:flex;
@@ -110,17 +136,39 @@
 	border-radius: 15px;
 	background: white;
 	box-shadow:0 0 9px 1px $lihtgrey-effect;
+	opacity: 0;
+	animation: menus-transition 5s;
+	animation-fill-mode: both;
 		&:hover {
-			& > .palette__good {
-				max-width: 20%;
-				animation-name: palette-good;
-				animation-duration: 800ms;
-			& > i {
-				transform: rotateZ(360deg);
-				animation-duration: 800ms;
+			opacity: 0.8;
+			box-shadow: 3px 3px 3px 3px $lihtgrey-effect;
+			transition: all 300ms linear;
+				& > .palette__good {
+					max-width: 20%;
+					animation-name: palette-good;
+					animation-duration: 1000ms;
+				& > i {
+					transform: rotateZ(360deg);
+					animation-duration: 1000ms;
 			}
 		}
 	}
+}
+
+.palette:nth-child(1){
+	animation-delay: 0.7s;
+}
+
+.palette:nth-child(2){
+	animation-delay: 0.9s;
+}
+
+.palette:nth-child(3){
+	animation-delay: 1s;
+}
+
+.palette:nth-child(4){
+	animation-delay: 1.1s;
 }
 
 .palette__text{
@@ -170,7 +218,7 @@
 	font-size: 20px;
 	transition: transform 800ms linear;
 		&:hover {
-			transform: rotateZ(306deg);
+			transform: rotateZ(360deg);
 		}
 }
 
@@ -191,6 +239,9 @@
 	color: white;
 	background-image:linear-gradient(320deg, $color-primaire, $color-secondaire);
 	border-style: none;
+		&:hover {
+			@include buttons-effects;
+		}
 	}
 }
 

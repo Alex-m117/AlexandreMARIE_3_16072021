@@ -9,3 +9,62 @@
 	opacity:1;
 	}
 }
+
+@keyframes coeur-like{
+0%	{
+	transform: transitionZ (0%)scale(0, 0);
+	opacity: 0;
+}
+
+100%{
+	transform: transitionZ (100%)scale(1, 1);
+	opacity: 1;
+	}
+}
+
+@keyframes animation-spin{
+0%  { 
+	transform: rotateZ(0deg);
+	opacity:1;
+	 }
+
+100%{ 
+	transform: rotateZ(360deg);
+	opacity:0;
+	}
+}
+
+@keyframes spin-transition{
+0% {
+	opacity: 1;
+	}
+
+100%{ 
+	opacity: 0;
+	z-index: -60; 
+	}
+}
+
+@keyframes main-transition{
+from 	{
+		opacity: 0;
+		}
+
+to 		{
+		opacity:1;
+	}
+}
+
+
+@keyframes menus-transition{
+
+100%{
+	opacity: 1;
+	}
+}
+
+
+
+
+
+
