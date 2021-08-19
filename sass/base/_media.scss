@@ -1,9 +1,13 @@
 /*** Règles Média Queries résolutions <280px ***/
-@media screen and (min-width: 280px) {
+@media screen and (min-width: 279px) {
 
 /** Index **/
 .description__button{
 	font-size: 12px;
+}
+
+.choix__num{
+	margin-right: 10px;
 }
 
 .choix__selection p{
@@ -14,7 +18,19 @@
 	margin-right: 10px;
 }
 
+.cards__description .cards__text{
+	width: 55%;
+}
+
 /** Pages **/
+.pages{
+	justify-content: flex-start;
+}
+
+.return{
+	margin-left: 7%;
+}
+
 .pages__logo{
 	width: 60%;
 }
@@ -23,7 +39,7 @@
 }
 
 .palette__text h4{
-	font-size: 14px;
+	font-size: 13px;
 }
 
 .palette__text p{
@@ -57,6 +73,14 @@
 }
 
 /** Pages **/
+.pages{
+	justify-content: space-around;
+	margin-left:0;
+}
+
+.pages__logo {
+    width: 60%;
+}
 
 .titre__menus {
 	font-size: 22px;
@@ -71,6 +95,16 @@
 }
 
 }/*** Fin des règles Média Queries résolutions <330px ***/
+
+/*** Règles Média Queries résolutions <360px ***/
+@media screen and (min-width: 360px) {
+
+/** Index **/
+.pages__logo {
+    width: 70%;
+}
+
+}/*** Fin des règles Média Queries résolutions <360px ***/
 
 /*** Règles Média Queries résolutions <400px ***/
 @media screen and (min-width: 400px) {
@@ -185,6 +219,10 @@
 	margin-left: 10px;
 }
 
+/** Pages **/
+.pages__logo{
+	width: 50%;
+}
 }/*** Fin des règles Média Queries résolutions <830px ***/
 
 
@@ -202,11 +240,6 @@
 
 .choix__selection .choix__num{
 	margin-right: 40px;
-}
-
-/** Pages **/
-.pages__logo{
-	width: 50%;
 }
 
 }/*** Fin des règles Média Queries résolutions <1020px ***/

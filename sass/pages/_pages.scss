@@ -181,6 +181,9 @@
 
 .palette__text h4{
 	margin: 0;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+  	overflow: hidden;
 }
 
 .palette__text p{
