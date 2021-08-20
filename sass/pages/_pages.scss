@@ -1,0 +1,259 @@
+#bloc__page{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+	max-width: 100%;
+	margin: 0;
+}
+
+/* Header des pages 1 à 4 */
+.pages{
+	width: 100%;
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;	
+}
+
+.pages__logo{
+	width: 70%;
+}
+
+.return {
+	margin-left: 5%;
+	width: 10%;
+}
+
+.pages a{
+	display: flex;
+	text-decoration: none;
+}
+.pages i{
+	display: flex;
+	font-size: 18px;
+	color: black;
+}
+
+/* Bloc image et titre des menus */
+.titre__img{
+	width: 100%;
+	height: 260px;
+	object-fit: cover;
+	z-index: 1;
+}
+
+.titre{
+	display: flex;
+	flex-direction: column;
+}
+
+.titre__block{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	margin-top:-50px;
+	border-radius: 40px 40px 0 0;
+	z-index: 2;
+	background-color: $color-background;
+}
+
+.titre__menus{
+	font-family: 'Shrikhand', sans-serif;
+	font-size: 26px;
+}
+
+.titre__like{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 7%;
+	justify-content: center;
+		&--on {
+			z-index: 2;
+    		position: absolute;
+    		font-size: 27px;
+    		opacity:0;
+    		display: block;
+			background: linear-gradient(200deg,$color-primaire,$color-secondaire);
+			background-clip: text;
+			color: transparent;
+    			&:hover {
+    				animation-name: coeur-like;
+					animation-duration: 4s;
+					animation-delay: 0.1s;
+    		}
+		}
+		&--off {
+			z-index: 1;
+    		position: absolute;
+    		font-size: 25px;
+    		opacity:1;
+    		color: grey;
+	}
+}	
+
+/* Menus */
+.menus__titres h3{
+	margin-left: 15px;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.menus__ligne{
+	width: 40px;
+	border-top: 4px solid #99E2D0;
+	margin-top: -15px;
+	margin-bottom: 15px;
+	margin-left: 15px;
+	border-top: 4px solid $color-tertiaire;
+}
+
+.menus__cards{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	align-items: center;
+	height: 236px;
+}
+
+/* Adaptation taille bloc de + de trois vignettes (cards) */
+.menus__cards1{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	align-items: center;
+	height: 314px;
+}
+/* Vignettes */
+.palette{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 94%;
+	height: 68px;
+	border-radius: 15px;
+	background: white;
+	box-shadow:0 0 9px 1px $lihtgrey-effect;
+	opacity: 0;
+	animation: menus-transition 5s;
+	animation-fill-mode: both;
+		&:hover {
+			opacity: 0.8;
+			box-shadow: 3px 3px 3px 3px $lihtgrey-effect;
+			transition: all 300ms linear;
+				& > .palette__good {
+					max-width: 20%;
+					animation-name: palette-good;
+					animation-duration: 1000ms;
+				& > i {
+					transform: rotateZ(360deg);
+					animation-duration: 1000ms;
+			}
+		}
+	}
+}
+
+.palette:nth-child(1){
+	animation-delay: 0.7s;
+}
+
+.palette:nth-child(2){
+	animation-delay: 0.9s;
+}
+
+.palette:nth-child(3){
+	animation-delay: 1s;
+}
+
+.palette:nth-child(4){
+	animation-delay: 1.1s;
+}
+
+.palette__text{
+	margin-left: 10px;
+	width: 80%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+  	overflow: hidden;
+}
+
+.palette__text h4{
+	margin: 0;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+  	overflow: hidden;
+}
+
+.palette__text p{
+	margin: 0;
+	font-size: 16px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+  	overflow: hidden;
+
+}
+
+.palette__price{
+	display: flex;
+	align-items: flex-end;
+	height: 40px;
+	padding: 10px;
+}
+
+.palette__good{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	height: 68px;
+	width: 20%;
+	max-width: 0;
+	overflow: hidden;
+	background-color: $color-tertiaire;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	transition: transform 2s ease-in-out;
+}
+
+.palette__good i{
+	color: white;
+	font-size: 20px;
+	transition: transform 800ms linear;
+		&:hover {
+			transform: rotateZ(360deg);
+		}
+}
+
+/* Boutton commander */
+
+.button{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+.button__commander{
+	width: 50%;
+	height: 50px;
+	margin-top: 50px;
+	border-radius: 25px;
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	color: white;
+	background-image:linear-gradient(320deg, $color-primaire, $color-secondaire);
+	border-style: none;
+		&:hover {
+			@include buttons-effects;
+		}
+	}
+}
+
+
+
+
+
+
+

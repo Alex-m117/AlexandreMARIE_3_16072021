@@ -1,0 +1,382 @@
+.bloc__page{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+	max-width: 100%;
+	margin: 0;
+}
+
+.spin__main{
+	animation: main-transition 3s;
+}
+
+.header__logo{
+	width: 165px;
+	height: 28px;
+}
+
+.localisation{
+	width: 100%;
+	height: 50px;
+.localisation__ico{
+	padding: 20px;
+	}
+}
+
+#localisation__search{
+	margin-left: -10px;
+	text-decoration: none;
+	background: transparent;
+	border: none;
+	width: 125px;
+	height: 25px;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.description__text h1{
+	display: flex;
+	align-items: center;
+	width: 60%;
+	height: 55px;
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: -5px;
+}
+
+.description__text p{
+	width: 80%;
+	height: 45px;
+	display: flex;
+	font-size: 16px;
+	font-weight: 300;
+	text-align: center;
+}
+
+.description__text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 180px;
+}
+
+.description__button{
+	width: 58%;
+	height: 50px;
+	border-radius: 25px;
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	color: white;
+	background-image:linear-gradient(320deg, $color-primaire, $color-secondaire);
+		&:hover {
+			opacity: 0.9;
+			@include buttons-effects;
+			transition: all 300ms linear;
+	}
+}
+.choix h2{
+	margin-left: 23px;
+	margin-top: 50px;
+}
+
+.choix ul{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 270px;
+}
+
+.choix__selection{
+	display: flex;
+	align-items: center;
+	width: 92%;
+	height: 73px;
+	list-style-type: none;
+	border-radius: 25px;
+	background: $color-background;
+	box-shadow:0 0 9px 1px $lihtgrey-effect;
+		&:hover{ 
+			background-color : rgba(147,86,220,0.2);
+			transform: scale(1.05);
+			@include buttons-effects;
+			transition: all 300ms linear;
+				i {color: $color-primaire;}
+	}
+}
+
+.choix__num{
+	display: flex;
+	align-items: center;
+	padding: 8px;
+	border-radius: 25px;
+	background-color: $color-primaire;
+	list-style-type: none;
+	height: 8px;
+	color: white;
+	margin-left: -10px;
+	margin-right: 25px;
+}
+
+.choix__selection a{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	text-decoration: none;
+}
+
+.choix__selection i{
+	color: #7e7e7e;
+	font-size: 16px;
+	margin-right: 20px;
+}	
+
+.choix__selection p{
+	font-size: 16px;
+	color: black;
+	font-weight: 600;
+}
+.restaurants h2{
+	display:flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	height: 80px;
+	margin-left: 20px;
+}
+
+.cards a{
+	text-decoration: none;
+	color: black;
+}
+
+.cards__menu{
+	border-radius: 25px;
+	width: 89%;
+	height: 250px;
+	background-color: white;
+	box-shadow:0 0 9px 1px $lihtgrey-effect;
+		&:hover {
+			box-shadow: 3px 3px 3px 3px rgba(153,226,208,0.40);
+	}
+}
+
+.cards__img{
+	display: flex;
+	justify-content: flex-end
+}
+.cards__img img{
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	z-index: 1;
+	object-fit: cover;
+	width: 100%;
+	height: 175px;
+}
+
+.cards__new{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 2;
+	position: absolute;
+	background-color: $color-tertiaire;
+	font-weight: 600;
+	color: #008766;
+	width: 80px;
+	height: 30px;
+	margin-top: 13px;
+	margin-right: 13px;
+	border-radius: 5px;
+}
+
+.cards__description{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	height: 75px;
+.cards__text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 75px;
+	width: 46%;
+	margin-left: 13px;
+.cards__titre{
+	display: flex;
+	height: 25px;
+	font-size: 16px;
+	margin:0;
+		}
+	}	
+}
+
+.cards__lieu{
+	display: flex;
+	justify-content: flex-start;
+	height: 25px;
+	margin:0;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.cards__like{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 75px;
+	width: 7%;
+	justify-content: center;
+	margin-right: 22px;
+	cursor: pointer;
+		&--on {
+			z-index: 2;
+    		position: absolute;
+    		font-size: 27px;
+    		opacity:0;
+			display: block;
+			background: linear-gradient(200deg,$color-primaire,$color-secondaire);
+			background-clip: text;
+			-webkit-background-clip: text;
+			color: transparent;
+    			&:hover {
+    				animation-name: coeur-like;
+					animation-duration: 4s;
+					animation-delay: 0.1s;
+    		}
+		}
+		&--off {
+			z-index: 1;
+    		position: absolute;
+    		font-size: 25px;
+    		opacity:1;
+    		color: grey;
+	}
+}	
+
+.liens h2{
+	color:white;
+	margin-left: 25px;
+	font-family: 'Shrikhand', sans-serif;
+	font-size: 18px;
+} 
+
+.liens a{
+	color:white;
+	text-decoration: none;
+}
+
+.liens ul{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 105px;
+	margin-left: -15px;
+}
+
+.liens__footer{
+	color: white;
+	list-style-type: none;	
+}
+
+.liens__footer i{
+	font-size: 12px;
+}
+
+.fas.fa-utensils{
+	margin-right: 10px;
+}
+
+.fas.fa-hands-helping{
+	margin-right: 5px;
+}
+
+/** Load spinner **/
+
+.loading{
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	content: "";
+	background: rgb(0,0,0,0.1);
+	animation: spin-transition 4s linear;
+	animation-fill-mode: both;
+	z-index: 50;
+}
+
+.load{
+	position: fixed;
+	opacity: 1;
+	top: 40%;
+	bottom:50%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	width: 160px;
+	height: 160px;
+	animation: load 4s linear;
+	animation-name: animation-spin;
+	animation-fill-mode: forwards;
+}
+
+.load__1, .load__2, .load__3, .load__4,{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	border: 4px solid transparent;
+	position: absolute;
+	opacity: 1;
+}
+
+.load__1{
+	border-left: 6px solid $color-footer;
+	border-right: 6px solid $color-secondaire;
+	width: 90px;
+	height: 90px;
+}
+
+.load__2{
+	border-left: 6px solid $color-tertiaire;
+	border-right: 6px solid $color-footer;
+	width: 100px;
+	height: 100px;
+}
+
+.load__3{
+	border-left: 6px solid $color-secondaire;
+	border-right: 6px solid $color-primaire;
+	width: 110px;
+	height: 110px;
+}
+
+.load__4{
+	border-left: 6px solid $color-primaire;
+	border-right: 6px solid $color-tertiaire;
+	width: 120px;
+	height: 120px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -4,11 +4,19 @@ Réalisation du projet par **Alexandre MARIE**
 
 ## Ohmyfood: Dynamisez une page web avec des animations CSS.
 
-
+- Comprendre le language SASS
+- Mettre en forme le HTML sous nomenclature BEM
+- Clarifier & Factoriser le code pour le rendre stable est fluide
+- Comprendre et mettre en place des animations CSS graphiques avancées
+- Assurer la cohérence graphique d'un site web
 
 ## Features
 
-
+- Découpage d'une maquette
+- Structure sémantique HTML en nomenclature BEM
+- Flex-box
+- Compilation SASS en CSS3
+- Animations CSS via SASS et Cubic-bezier
 
 ## Validation
 
@@ -23,6 +31,6 @@ Réalisation du projet par **Alexandre MARIE**
 - Ohmyfood "SSAS 7-1"
 - Images du Projet 3
 
-## Lien du site Reservia
+## Lien du site Ohmyfood
 
 - https://alex-m117.github.io/AlexandreMARIE_3_16072021/
