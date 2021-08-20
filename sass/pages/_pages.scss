@@ -75,11 +75,14 @@
     		position: absolute;
     		font-size: 27px;
     		opacity:0;
-    		color: $color-tertiaire;	
+    		display: block;
+			background: linear-gradient(200deg,$color-primaire,$color-secondaire);
+			background-clip: text;
+			color: transparent;
     			&:hover {
     				animation-name: coeur-like;
-					animation-duration: 2000ms;
-					transform-origin: center center;
+					animation-duration: 4s;
+					animation-delay: 0.1s;
     		}
 		}
 		&--off {

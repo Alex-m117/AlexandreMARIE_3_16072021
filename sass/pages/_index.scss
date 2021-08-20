@@ -100,13 +100,11 @@
 	background: $color-background;
 	box-shadow:0 0 9px 1px $lihtgrey-effect;
 		&:hover{ 
-			background:linear-gradient(320deg, $color-primaire, $color-secondaire);
+			background-color : rgba(147,86,220,0.2);
 			transform: scale(1.05);
-			opacity: 0.9;
 			@include buttons-effects;
 			transition: all 300ms linear;
-				i {color: white;}
-				p {color: white;}
+				i {color: $color-primaire;}
 	}
 }
 
@@ -235,16 +233,21 @@
 	width: 7%;
 	justify-content: center;
 	margin-right: 22px;
+	cursor: pointer;
 		&--on {
 			z-index: 2;
     		position: absolute;
     		font-size: 27px;
     		opacity:0;
-    		color: $color-tertiaire;	
+			display: block;
+			background: linear-gradient(200deg,$color-primaire,$color-secondaire);
+			background-clip: text;
+			-webkit-background-clip: text;
+			color: transparent;
     			&:hover {
     				animation-name: coeur-like;
-					animation-duration: 2s;
-					transform-origin: center center;
+					animation-duration: 4s;
+					animation-delay: 0.1s;
     		}
 		}
 		&--off {
