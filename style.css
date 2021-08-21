@@ -400,6 +400,7 @@ body {
   background: linear-gradient(200deg, #9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
+  -moz-background-clip: text;
   color: transparent;
 }
 .cards__like--on:hover {
@@ -590,8 +591,11 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  height: 75px;
   width: 7%;
   justify-content: center;
+  margin-right: 22px;
+  cursor: pointer;
 }
 .titre__like--on {
   z-index: 2;
@@ -601,6 +605,8 @@ body {
   display: block;
   background: linear-gradient(200deg, #9356DC, #FF79DA);
   background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
   color: transparent;
 }
 .titre__like--on:hover {
